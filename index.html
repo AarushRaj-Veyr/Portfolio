@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Personal Portfolio of B.V.M Aarush Raj - Turning curiosity into code and ideas into impact. 1st year B.Tech CSE student at NST, on a Grand Line Interactive Voyage with Sun God Nika awakening, 4-layer deep sea channels, and a full academic voyage log.">
+  <title>B.V.M Aarush Raj | Grand Line Voyager</title>
+
+  <!-- Google Fonts: Space Grotesk (Headings), Plus Jakarta Sans (Body), JetBrains Mono (Labels/Mono) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- External Stylesheet (Pure CSS3, Zero Inline Styles, Zero JavaScript) -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Top Energy Scanline -->
+  <div class="scroll-energy-bar" aria-hidden="true"></div>
+
+  <!-- =========================================================================
+       THOUSAND SUNNY ROUTE RAIL
+       Fixed left rail: the ship rides the scroll (CSS scroll-driven animation)
+       and every island node is a hoverable shortcut.
+       ========================================================================= -->
+  <aside class="ship-rail" aria-label="Grand Line Route Shortcuts">
+    <div class="ship-rail-line" aria-hidden="true">
+      <div class="ship-rail-progress"></div>
+    </div>
+
+    <nav class="ship-rail-nodes" aria-label="Island Shortcuts">
+      <a href="#hero" class="rail-node"><span class="rail-dot"></span><span class="rail-label">DAWN</span></a>
+      <a href="#about" class="rail-node"><span class="rail-dot"></span><span class="rail-label">SKYPIEA</span></a>
+      <a href="#education" class="rail-node"><span class="rail-dot"></span><span class="rail-label">SCHOOL</span></a>
+      <a href="#experience" class="rail-node"><span class="rail-dot"></span><span class="rail-label">WANO</span></a>
+      <a href="#hackathons" class="rail-node"><span class="rail-dot"></span><span class="rail-label">WATER 7</span></a>
+      <a href="#skills" class="rail-node"><span class="rail-dot"></span><span class="rail-label">LAUGH TALE</span></a>
+      <a href="#contact" class="rail-node"><span class="rail-dot"></span><span class="rail-label">EGGHEAD</span></a>
+    </nav>
+
+    <div class="ship-rail-ship" aria-hidden="true">
+      <div class="ship-rail-bob">
+        <svg viewBox="0 0 60 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8 36 C14 48, 46 48, 52 36 L54 30 L6 30 Z" fill="#c0392b" stroke="#e67e22" stroke-width="1.5" />
+          <path d="M6 30 L54 30 L51 24 L9 24 Z" fill="#2c3e50" stroke="#ffd000" stroke-width="1" />
+          <circle cx="8" cy="25" r="8" fill="#f1c40f" stroke="#e67e22" stroke-width="1" />
+          <circle cx="8" cy="25" r="4" fill="#e67e22" />
+          <line x1="30" y1="6" x2="30" y2="30" stroke="#795548" stroke-width="2.5" />
+          <path d="M14 10 C24 7, 40 7, 48 10 C44 20, 44 22, 48 26 C36 23, 24 23, 14 26 C18 22, 18 20, 14 10 Z"
+            fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1" />
+          <circle cx="31" cy="17" r="4" fill="#2c3e50" />
+          <circle cx="29" cy="16" r="1" fill="#fff" />
+          <circle cx="33" cy="16" r="1" fill="#fff" />
+          <ellipse cx="31" cy="13" rx="6" ry="1.5" fill="#ffd000" />
+          <path d="M27 13 C27 10, 35 10, 35 13 Z" fill="#ffd000" />
+          <rect x="27.5" y="12" width="7" height="1.2" fill="#e53935" />
+          <path d="M30 5 L44 7 L30 11 Z" fill="#111" />
+          <path d="M4 40 C14 37, 24 42, 36 39 C48 36, 56 41, 60 39" stroke="#00f0ff" stroke-width="1.5"
+            stroke-linecap="round" fill="none" />
+          <path d="M4 44 C16 41, 28 46, 40 43 C52 40, 58 44, 60 43" stroke="#ffffff" stroke-width="1"
+            stroke-linecap="round" fill="none" opacity="0.6" />
+        </svg>
+      </div>
+    </div>
+  </aside>
+
+  <!-- =========================================================================
+       TOP LOG POSE MASTHEAD NAVBAR
+       ========================================================================= -->
+  <header class="navbar-wrapper">
+    <nav class="navbar" aria-label="Grand Line Navigation">
+      <a href="#hero" class="nav-brand" aria-label="Return to top">
+        <span class="brand-monogram">B</span>
+        <span class="brand-name">B.V.M Aarush Raj</span>
+        <span class="brand-subtext">// GRAND LINE VOYAGER</span>
+      </a>
+
+      <!-- Log Pose 3-Needle Compass -->
+      <div class="log-pose-masthead-dock">
+        <div class="log-pose-tri-dial" aria-hidden="true">
+          <svg class="tri-dial-svg" viewBox="0 0 44 44" fill="none">
+            <circle cx="22" cy="22" r="20" stroke="#e5a93b" stroke-width="2" />
+            <line x1="22" y1="22" x2="22" y2="7" stroke="#ffd000" stroke-width="2" stroke-linecap="round"
+              class="needle-main" />
+            <line x1="22" y1="22" x2="33" y2="15" stroke="#ff0055" stroke-width="1.8" stroke-linecap="round"
+              class="needle-secondary" />
+            <line x1="22" y1="22" x2="11" y2="17" stroke="#00f0ff" stroke-width="1.8" stroke-linecap="round"
+              class="needle-tertiary" />
+            <circle cx="22" cy="22" r="3" fill="#ffd000" />
+          </svg>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link"><span class="nav-idx">00</span>DAWN</a></li>
+          <li><a href="#about" class="nav-link"><span class="nav-idx">01</span>SKYPIEA</a></li>
+          <li><a href="#education" class="nav-link"><span class="nav-idx">02</span>SCHOOL</a></li>
+          <li><a href="#experience" class="nav-link"><span class="nav-idx">03</span>WANO</a></li>
+          <li><a href="#hackathons" class="nav-link"><span class="nav-idx">04</span>WATER 7</a></li>
+          <li><a href="#skills" class="nav-link"><span class="nav-idx">05</span>LAUGH TALE</a></li>
+          <li><a href="#contact" class="nav-link"><span class="nav-idx">06</span>EGGHEAD</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-actions">
+        <a href="https://www.linkedin.com/in/b-aarush-raj-ab4765331" target="_blank" rel="noopener noreferrer"
+          class="btn-nav-linkedin" title="Open LinkedIn Profile" aria-label="LinkedIn Profile">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path
+              d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.88a1.64 1.64 0 1 0-.02 3.28 1.64 1.64 0 0 0 .02-3.28z" />
+          </svg>
+          <span>LinkedIn Uplink</span>
+        </a>
+
+        <a href="https://github.com/AarushRaj-Veyr" target="_blank" rel="noopener noreferrer" class="btn-nav-github"
+          title="Open GitHub Profile" aria-label="GitHub Profile">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path
+              d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z" />
+          </svg>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- =========================================================================
+         ISLAND 00: DAWN ISLAND — BTECH 1st Year Student at NST
+         ========================================================================= -->
+    <section id="hero" class="hero-section island-sector island-dawn">
+
+      <!-- Dawn backdrop -->
+      <div class="terrain-backdrop terrain-dawn-mesh" aria-hidden="true">
+        <div class="dawn-solar-corona"></div>
+        <div class="dawn-pulse-ring ring-a"></div>
+        <div class="dawn-pulse-ring ring-b"></div>
+        <div class="dawn-pulse-ring ring-c"></div>
+      </div>
+
+      <div class="hero-container">
+
+        <!-- Avatar — Joy Boy floating with Nika radiating -->
+        <div class="hero-avatar-column">
+          <div class="avatar-float-wrapper">
+            <!-- Solar pulse rings (pure CSS animated) -->
+            <div class="solar-pulse-ring spr-1" aria-hidden="true"></div>
+            <div class="solar-pulse-ring spr-2" aria-hidden="true"></div>
+            <div class="solar-pulse-ring spr-3" aria-hidden="true"></div>
+
+            <div class="avatar-shield-container">
+              <div class="avatar-orbit-ring ring-solar"></div>
+              <div class="avatar-orbit-ring ring-haki"></div>
+
+              <div class="avatar-glow-frame">
+                <!-- Sun God Nika SVG radiating behind 'B' -->
+                <div class="sun-god-nika-backdrop" aria-hidden="true">
+                  <svg class="nika-vector-art" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                      <radialGradient id="nikaSolarFlare" cx="50%" cy="50%" r="50%">
+                        <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95" />
+                        <stop offset="30%" stop-color="#ffd000" stop-opacity="0.8" />
+                        <stop offset="65%" stop-color="#ff5722" stop-opacity="0.45" />
+                        <stop offset="100%" stop-color="#ff0055" stop-opacity="0" />
+                      </radialGradient>
+                      <linearGradient id="nikaHairShine" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#ffffff" />
+                        <stop offset="60%" stop-color="#fff8e1" />
+                        <stop offset="100%" stop-color="#ffd54f" />
+                      </linearGradient>
+                      <radialGradient id="nikaHakiAura" cx="50%" cy="50%" r="50%">
+                        <stop offset="0%" stop-color="#ff0055" stop-opacity="0.6" />
+                        <stop offset="70%" stop-color="#651fff" stop-opacity="0.2" />
+                        <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+                      </radialGradient>
+                    </defs>
+                    <!-- Drums of Liberation Solar Corona Rays -->
+                    <circle cx="120" cy="120" r="115" fill="url(#nikaSolarFlare)" />
+                    <circle cx="120" cy="120" r="90" fill="url(#nikaHakiAura)" />
+                    <g class="nika-corona-rays" stroke="#ffd000" stroke-width="1.5" opacity="0.75"
+                      stroke-dasharray="6 4">
+                      <circle cx="120" cy="120" r="75" />
+                      <circle cx="120" cy="120" r="105" />
+                      <line x1="120" y1="8" x2="120" y2="232" />
+                      <line x1="8" y1="120" x2="232" y2="120" />
+                      <line x1="41" y1="41" x2="199" y2="199" />
+                      <line x1="199" y1="41" x2="41" y2="199" />
+                    </g>
+                    <!-- Gear 5 Billowing Flame Hair (Clouds of Liberation) -->
+                    <path
+                      d="M60,110 C50,85 65,55 90,50 C80,35 100,20 120,20 C140,20 160,35 150,50 C175,55 190,85 180,110 C195,130 185,160 165,165 C155,145 135,140 120,140 C105,140 85,145 75,165 C55,160 45,130 60,110 Z"
+                      fill="url(#nikaHairShine)" stroke="#ffd000" stroke-width="2" />
+                    <!-- Hagoromo cloud ribbon -->
+                    <path
+                      d="M25,145 C15,110 35,80 65,85 C95,90 100,65 120,65 C140,65 145,90 175,85 C205,80 225,110 215,145 C205,175 180,185 155,175 C135,167 105,167 85,175 C60,185 35,175 25,145 Z"
+                      fill="url(#nikaHairShine)" opacity="0.35" stroke="#ffd000" stroke-width="1.5" />
+                    <!-- Joy Boy silhouette -->
+                    <path d="M92,95 C92,85 148,85 148,95 C148,125 135,145 120,145 C105,145 92,125 92,95 Z"
+                      fill="#1a0f05" opacity="0.75" />
+                    <!-- Laughing grin -->
+                    <path d="M98,115 C105,132 135,132 142,115 C135,123 105,123 98,115 Z" fill="#ffffff" stroke="#ffd000"
+                      stroke-width="1" />
+                    <!-- Awakened Joy Boy eyes -->
+                    <circle cx="108" cy="102" r="4.5" fill="#ffd000" stroke="#ff0055" stroke-width="1.5" />
+                    <circle cx="132" cy="102" r="4.5" fill="#ffd000" stroke="#ff0055" stroke-width="1.5" />
+                    <circle cx="108" cy="102" r="2" fill="#ff0055" />
+                    <circle cx="132" cy="102" r="2" fill="#ff0055" />
+                    <!-- Straw Hat on back -->
+                    <ellipse cx="120" cy="158" rx="35" ry="8" fill="#ffd000" stroke="#c68a00" stroke-width="1.5" />
+                    <path d="M100,158 C100,146 140,146 140,158 Z" fill="#ffd000" />
+                    <rect x="102" y="154" width="36" height="3" fill="#e53935" />
+                  </svg>
+                </div>
+
+                <!-- Monogram 'B' front and center -->
+                <span class="avatar-monogram-fallback" aria-label="B.V.M Aarush Raj initials">B</span>
+              </div>
+
+              <div class="hud-floating-tag tag-top">
+                <span class="hud-dot hud-dot-solar"></span>
+                <span class="hud-label">Robotics &amp; Drone Swarms</span>
+              </div>
+              <div class="hud-floating-tag tag-bottom">
+                <span class="hud-dot hud-dot-haki"></span>
+                <span class="hud-label">FDE &amp; Venture Engine</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero text content -->
+        <div class="hero-content">
+          <div class="hero-telemetry-badge">
+            <span class="telemetry-dot"></span>
+            <span class="telemetry-channel">1ST YEAR B.TECH CSE STUDENT AT NST</span>
+            <span class="telemetry-haki">CONQUEROR'S FREQUENCY: ACTIVE</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="hero-title-prefix">CAPTAIN &amp; BUILDER</span>
+            <span class="hero-title-name text-gradient-solar">B.V.M Aarush Raj</span>
+          </h1>
+
+          <p class="hero-tagline">Turning curiosity into code and ideas into impact.</p>
+
+          <p class="hero-bio">
+            I build things at the intersection of technology, AI and creative problem-solving.
+            Always learning, always shipping.
+          </p>
+
+          <!-- CTAs -->
+          <div class="hero-actions">
+            <a href="https://www.linkedin.com/in/b-aarush-raj-ab4765331" target="_blank" rel="noopener noreferrer"
+              class="btn btn-primary btn-solar-glow" title="Connect with B.V.M Aarush Raj on LinkedIn">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.88a1.64 1.64 0 1 0-.02 3.28 1.64 1.64 0 0 0 .02-3.28z" />
+              </svg>
+              <span>Connect on LinkedIn</span>
+              <span class="btn-flare"></span>
+            </a>
+
+            <a href="#about" class="btn btn-secondary">
+              <span>Explore Grand Line</span>
+              <span class="btn-arrow">&#8595;</span>
+            </a>
+          </div>
+
+          <!-- Voyage Log Dock Row — island navigation anchors -->
+          <nav class="hero-voyage-dock" aria-label="Island Voyage Log">
+            <span class="dock-label">&#9875; VOYAGE LOG</span>
+            <div class="dock-anchors">
+              <a href="#hero" class="dock-anchor">
+                <span class="dock-num">00</span>
+                <span class="dock-name">DAWN</span>
+              </a>
+              <a href="#about" class="dock-anchor">
+                <span class="dock-num">01</span>
+                <span class="dock-name">SKYPIEA</span>
+              </a>
+              <a href="#education" class="dock-anchor">
+                <span class="dock-num">02</span>
+                <span class="dock-name">SCHOOL</span>
+              </a>
+              <a href="#experience" class="dock-anchor">
+                <span class="dock-num">03</span>
+                <span class="dock-name">WANO</span>
+              </a>
+              <a href="#hackathons" class="dock-anchor">
+                <span class="dock-num">04</span>
+                <span class="dock-name">WATER 7</span>
+              </a>
+              <a href="#skills" class="dock-anchor">
+                <span class="dock-num">05</span>
+                <span class="dock-name">LAUGH TALE</span>
+              </a>
+              <a href="#contact" class="dock-anchor">
+                <span class="dock-num">06</span>
+                <span class="dock-name">EGGHEAD</span>
+              </a>
+            </div>
+          </nav>
+
+          <!-- Social strip -->
+          <div class="hero-social-strip">
+            <span class="social-label">SECURE UPLINKS:</span>
+            <div class="social-icon-group">
+              <a href="https://www.linkedin.com/in/b-aarush-raj-ab4765331" target="_blank" rel="noopener noreferrer"
+                class="social-icon-link" aria-label="LinkedIn Profile">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.88a1.64 1.64 0 1 0-.02 3.28 1.64 1.64 0 0 0 .02-3.28z" />
+                </svg>
+              </a>
+              <a href="https://github.com/AarushRaj-Veyr" target="_blank" rel="noopener noreferrer"
+                class="social-icon-link" aria-label="GitHub Profile">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z" />
+                </svg>
+              </a>
+              <a href="mailto:aarushraj15618@gmail.com" class="social-icon-link" aria-label="Email">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <a href="#about" class="scroll-down-hint" aria-label="Set sail to Skypiea">
+        <span class="scroll-text">SET SAIL // EXPLORE GRAND LINE ROUTE</span>
+        <svg class="scroll-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </a>
+    </section>
+
+    <!-- =========================================================================
+         SEA CHANNEL 01: DAWN → SKYPIEA (4-layer deep waves)
+         ========================================================================= -->
+    <div class="sea-channel-barrier" aria-hidden="true">
+      <div class="sea-barrier-beacon">
+        <span class="beacon-compass">&#9875;</span>
+        <span class="beacon-label">GRAND LINE SEA CHANNEL // ROUTE: DAWN ISLAND &#10142; SKYPIEA SEA OF CLOUDS</span>
+        <span class="beacon-depth">DEPTH: 7,000 FATHOMS // KNOCK UP STREAM VORTEX</span>
+      </div>
+      <div class="sea-wave-layers">
+        <!-- Layer 1: darkest -->
+        <svg class="sea-wave-svg wave-layer-1" viewBox="0 0 1440 220" preserveAspectRatio="none">
+          <path
+            d="M0,120 C180,80 360,160 540,120 C720,80 900,160 1080,120 C1260,80 1380,110 1440,100 L1440,220 L0,220 Z"
+            fill="#011638" />
+        </svg>
+        <!-- Layer 2 -->
+        <svg class="sea-wave-svg wave-layer-2" viewBox="0 0 1440 220" preserveAspectRatio="none">
+          <path
+            d="M0,140 C200,100 400,170 600,130 C800,90 1000,165 1200,130 C1340,105 1400,125 1440,115 L1440,220 L0,220 Z"
+            fill="#00509d" />
+        </svg>
+        <!-- Layer 3: bright surface -->
+        <svg class="sea-wave-svg wave-layer-3" viewBox="0 0 1440 220" preserveAspectRatio="none">
+          <path
+            d="M0,160 C160,130 320,185 480,155 C640,125 800,185 960,155 C1120,125 1300,160 1440,145 L1440,220 L0,220 Z"
+            fill="#00a8e8" />
+        </svg>
+        <!-- Layer 4: foam crest with stroked path -->
+        <svg class="sea-wave-svg wave-layer-4" viewBox="0 0 1440 220" preserveAspectRatio="none">
+          <path
+            d="M0,175 C120,160 240,190 360,172 C480,154 600,188 720,170 C840,152 960,185 1080,168 C1200,151 1340,175 1440,165"
+            fill="none" stroke="#00f0ff" stroke-width="3.5" stroke-linecap="round" />
+          <path
+            d="M0,182 C100,170 220,195 340,180 C460,165 580,193 700,178 C820,163 940,188 1060,174 C1180,160 1320,180 1440,172"
+            fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.7" />
+        </svg>
+      </div>
+      <div class="sea-whirlpool-current"></div>
+    </div>
+
+    <!-- =========================================================================
+         ISLAND 01: SKYPIEA — PONEGLYPH TELEMETRY & BIO
+         ========================================================================= -->
+    <section id="about" class="section-padding island-sector island-skypiea">
+      <div class="terrain-backdrop terrain-skypiea-mesh" aria-hidden="true">
+        <div class="cloud-sea-cumulus-1"></div>
+        <div class="cloud-sea-cumulus-2"></div>
+        <div class="shandora-pillars"></div>
+      </div>
+
+      <div class="section-container">
+        <header class="section-header">
+          <div class="sector-badge">
+            <span class="sector-code">ISLAND 01 // SKYPIEA 10,000 METERS</span>
+            <span class="sector-coords">COORD: 0°12'S 44°31'W // WHITE-WHITE SEA</span>
+            <!-- Easter Egg 02: Nico Robin's Vault — decorative chip, no href -->
+            <span class="easter-egg-chip chip-archive" title="Nico Robin's Vault: Internet Archive (Wayback Machine)">
+              <span class="chip-rune">&#9881;</span>
+              <span class="chip-name">Nico Robin's Vault</span>
+              <span class="chip-lore">Internet Archive // Real Void Century</span>
+            </span>
+          </div>
+          <span class="section-kicker">01 // PONEGLYPH TELEMETRY &amp; CREED</span>
+          <h2 class="section-heading">Architectural Vision &amp; Bio</h2>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-card cyber-card">
+            <div class="card-corner corner-tl"></div>
+            <div class="card-corner corner-tr"></div>
+            <div class="card-corner corner-bl"></div>
+            <div class="card-corner corner-br"></div>
+            <div class="card-header-mini">
+              <span class="badge-mini badge-solar">ORIGIN PROTOCOL</span>
+              <span class="stamp-code">FDE-VENTURE-01</span>
+            </div>
+            <h3 class="about-title">The Explorer's Mindset</h3>
+            <p class="about-text">
+              I build things at the intersection of technology, AI and creative problem-solving. Always learning, always
+              shipping.
+            </p>
+            <p class="about-text">
+              Like traversing the treacherous currents of the Grand Line, modern software and robotics demand unyielding
+              adaptability.
+              My engineering philosophy combines technical rigor with rapid prototyping — moving from abstract theory to
+              production systems
+              that solve urgent physical and digital challenges.
+            </p>
+            <div class="quote-banner">
+              <span class="quote-mark">"</span>
+              <span class="quote-text">Turning curiosity into code and ideas into impact. The Void Century of human
+                knowledge is vast — I intend to read every Poneglyph.</span>
+            </div>
+          </div>
+
+          <div class="tenets-container">
+            <div class="tenet-card cyber-card">
+              <div class="tenet-number">01</div>
+              <div class="tenet-body">
+                <h4 class="tenet-title">Autonomous Drone Intelligence</h4>
+                <p class="tenet-desc">Designing multi-agent aerial and ground search systems that coordinate during
+                  life-critical search and rescue missions.</p>
+              </div>
+            </div>
+            <div class="tenet-card cyber-card">
+              <div class="tenet-number">02</div>
+              <div class="tenet-body">
+                <h4 class="tenet-title">Forward Deployed Engineering</h4>
+                <p class="tenet-desc">Embedding directly at the frontline problem domain, transforming complex
+                  real-world requirements into functional software architectures.</p>
+              </div>
+            </div>
+            <div class="tenet-card cyber-card">
+              <div class="tenet-number">03</div>
+              <div class="tenet-body">
+                <h4 class="tenet-title">Zero-to-One Venture Craft</h4>
+                <p class="tenet-desc">Building resilient products from the ground up, evaluating economic incentives,
+                  distribution channels, and technical scalability.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =========================================================================
+         SEA CHANNEL 02: SKYPIEA → FOOSHA VILLAGE (academic waters)
+         ========================================================================= -->
+    <div class="sea-channel-barrier" aria-hidden="true">
+      <div class="sea-barrier-beacon">
+        <span class="beacon-compass">&#9875;</span>
+        <span class="beacon-label">GRAND LINE SEA CHANNEL // ROUTE: SKYPIEA &#10142; FOOSHA VILLAGE SCHOOL
+          DOCKS</span>
+        <span class="beacon-depth">DEPTH: 3,600 FATHOMS // CALM BELT SCHOLAR CURRENTS</span>
+      </div>
+      <div class="sea-wave-layers">
+        <svg class="sea-wave-svg wave-layer-1" viewBox="0 0 1440 220" preserveAspectRatio="none">
+          <path d="M0,100 C200,60 400,155 600,100 C800,45 1000,145 1200,100 C1340,67 1400,95 1440,80 L1440,220 L0,220 Z"
+            fill="#011638" />
+        </svg>
+        <svg class="sea-wave-svg wave-layer-2" viewBox="0 0 1440 220" preserveAspectRatio="none">
+          <path
+            d="M0,130 C180,95 360,165 540,125 C720,85 900,160 1080,125 C1260,90 1380,120 1440,110 L1440,220 L0,220 Z"
+            fill="#00509d" />
+        </svg>
+        <svg class="sea-wave-svg wave-layer-3" viewBox="0 0 1440 220" preserveAspectRatio="none">
+          <path
+            d="M0,155 C140,125 280,180 420,152 C560,124 700,180 840,152 C980,124 1160,165 1440,148 L1440,220 L0,220 Z"
+            fill="#00a8e8" />
+        </svg>
+        <svg class="sea-wave-svg wave-layer-4" viewBox="0 0 1440 220" preserveAspectRatio="none">
+          <path
+            d="M0,170 C130,155 260,187 390,169 C520,151 650,185 780,167 C910,149 1070,180 1200,165 C1320,152 1390,170 1440,162"
+            fill="none" stroke="#00f0ff" stroke-width="3.5" stroke-linecap="round" />
+          <path
+            d="M0,178 C110,165 230,192 350,177 C470,162 590,190 710,175 C830,160 970,183 1100,170 C1220,157 1350,176 1440,170"
+            fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.7" />
+        </svg>
+      </div>
+      <div class="sea-whirlpool-current"></div>
+    </div>
+
+    <!-- =========================================================================
+         ISLAND 02: FOOSHA VILLAGE — SCHOOL EDUCATION LOG
+         ========================================================================= -->
+    <section id="education" class="section-padding island-sector island-foosha">
+      <div class="section-container">
+        <header class="section-header">
+          <div class="sector-badge">
+            <span class="sector-code">ISLAND 02 // FOOSHA VILLAGE SCHOOL DOCKS</span>
+            <span class="sector-coords">EARLY VOYAGE LOG // CLASS 10 &amp; CLASS 12</span>
+          </div>
+          <span class="section-kicker">02 // ACADEMIC VOYAGE LOG</span>
+          <h2 class="section-heading">School Education</h2>
+        </header>
+
+        <div class="education-grid">
+
+          <!-- CLASS 10 -->
+          <article class="edu-card cyber-card">
+            <div class="card-corner corner-tl"></div>
+            <div class="card-corner corner-tr"></div>
+            <div class="card-corner corner-bl"></div>
+            <div class="card-corner corner-br"></div>
+            <span class="edu-class">Class 10th</span>
+            <h3 class="edu-school">B.S.R.K.V</h3>
+          </article>
+
+          <!-- CLASS 12 -->
+          <article class="edu-card cyber-card">
+            <div class="card-corner corner-tl"></div>
+            <div class="card-corner corner-tr"></div>
+            <div class="card-corner corner-bl"></div>
+            <div class="card-corner corner-br"></div>
+            <span class="edu-class">Class 12th</span>
+            <h3 class="edu-school">Nine Education</h3>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SEA CHANNEL 03: FOOSHA VILLAGE → WANO
+         ========================================================================= -->
+    <div class="sea-channel-barrier" aria-hidden="true">
+      <div class="sea-barrier-beacon">
+        <span class="beacon-compass">&#9875;</span>
+        <span class="beacon-label">GRAND LINE SEA CHANNEL // ROUTE: FOOSHA VILLAGE &#10142; WANO COUNTRY VOLCANIC
+          MERIDIAN</span>
+        <span class="beacon-depth">DEPTH: 6,400 FATHOMS // GIANT CARP WATERFALL RAPIDS</span>
+      </div>
+      <div class="sea-wave-layers">
+        <svg class="sea-wave-svg wave-layer-1" viewBox="0 0 1440 220" preserveAspectRatio="none">
+          <path d="M0,100 C200,60 400,155 600,100 C800,45 1000,145 1200,100 C1340,67 1400,95 1440,80 L1440,220 L0,220 Z"
+            fill="#011638" />
+        </svg>
+        <svg class="sea-wave-svg wave-layer-2" viewBox="0 0 1440 220" preserveAspectRatio="none">
+          <path
+            d="M0,130 C180,95 360,165 540,125 C720,85 900,160 1080,125 C1260,90 1380,120 1440,110 L1440,220 L0,220 Z"
+            fill="#00509d" />
+        </svg>
+        <svg class="sea-wave-svg wave-layer-3" viewBox="0 0 1440 220" preserveAspectRatio="none">
+          <path
+            d="M0,155 C140,125 280,180 420,152 C560,124 700,180 840,152 C980,124 1160,165 1440,148 L1440,220 L0,220 Z"
+            fill="#00a8e8" />
+        </svg>
+        <svg class="sea-wave-svg wave-layer-4" viewBox="0 0 1440 220" preserveAspectRatio="none">
+          <path
+            d="M0,170 C130,155 260,187 390,169 C520,151 650,185 780,167 C910,149 1070,180 1200,165 C1320,152 1390,170 1440,162"
+            fill="none" stroke="#00f0ff" stroke-width="3.5" stroke-linecap="round" />
+          <path
+            d="M0,178 C110,165 230,192 350,177 C470,162 590,190 710,175 C830,160 970,183 1100,170 C1220,157 1350,176 1440,170"
+            fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.7" />
+        </svg>
+      </div>
+      <div class="sea-whirlpool-current"></div>
+    </div>
+
+    <!-- =========================================================================
+         ISLAND 03: WANO — EXPEDITION TIMELINE
+         ========================================================================= -->
+    <section id="experience" class="section-padding island-sector island-wano">
+      <div class="terrain-backdrop terrain-wano-mesh" aria-hidden="true">
+        <div class="wano-fuji-silhouette"></div>
+        <div class="seigaiha-wave-pattern"></div>
+        <div class="sakura-drift-layer"></div>
+      </div>
+
+      <div class="section-container">
+        <header class="section-header">
+          <div class="sector-badge">
+            <span class="sector-code">ISLAND 03 // WANO SAMURAI BATTLES</span>
+            <span class="sector-coords">KOZUKI EMBLEM // CONQUEROR'S FORGE</span>
+            <!-- Easter Egg 03: Franky's Robotics — decorative chip, no href -->
+            <span class="easter-egg-chip chip-nasa" title="Franky's Robotics Lab // NASA JPL Missions">
+              <span class="chip-rune">&#9883;</span>
+              <span class="chip-name">Franky's Robotics</span>
+              <span class="chip-lore">NASA JPL // Mars Rovers &amp; Drones</span>
+            </span>
+          </div>
+          <span class="section-kicker">03 // EXPEDITION TIMELINE</span>
+          <h2 class="section-heading">Missions &amp; Focus</h2>
+        </header>
+
+        <div class="timeline-container">
+
+          <!-- TIMELINE 1 -->
+          <article class="timeline-card cyber-card">
+            <div class="card-corner corner-tl"></div>
+            <div class="card-corner corner-tr"></div>
+            <div class="card-corner corner-bl"></div>
+            <div class="card-corner corner-br"></div>
+            <div class="timeline-meta-bar">
+              <span class="timeline-badge badge-solar">MISSION 01</span>
+              <span class="timeline-dates">2026</span>
+            </div>
+            <h3 class="timeline-entity-title">Robotics &amp; AI</h3>
+            <h4 class="timeline-project-subtitle">ResQLink – Intelligent Drone-Assisted Search &amp; Rescue (SIH)</h4>
+            <div class="timeline-tag-row">
+              <span class="haki-tag">Smart India Hackathon</span>
+              <span class="haki-tag">Multi-Agent Robotics</span>
+              <span class="haki-tag">Search Intelligence</span>
+            </div>
+            <div class="timeline-narrative">
+              <p>ResQLink is a proposed multi-agent search-and-rescue system designed to assist disaster-response teams
+                through coordinated aerial drones and ground rovers. The system: 1 mother drone, 3–4 child drones, and
+                ground rovers to improve search-area coverage and operational coordination.</p>
+              <div class="role-breakdown-box">
+                <span class="breakdown-headline">Software – Search Coverage &amp; Gap Intelligence</span>
+                <ul class="breakdown-list">
+                  <li>Explored search-area coverage monitoring and tracking.</li>
+                  <li>Conceptualised identifying unexplored or insufficiently searched regions.</li>
+                  <li>Explored intelligent search prioritisation and adaptive mission planning.</li>
+                  <li>Studied coordination between aerial drones and ground rovers.</li>
+                </ul>
+              </div>
+              <div class="timeline-status-footer">
+                <span class="status-key">Key Areas:</span> Robotics, Multi-Agent Systems, AI, Search Intelligence,
+                Mission Planning.
+              </div>
+            </div>
+          </article>
+
+          <!-- TIMELINE 2 -->
+          <article class="timeline-card cyber-card">
+            <div class="card-corner corner-tl"></div>
+            <div class="card-corner corner-tr"></div>
+            <div class="card-corner corner-bl"></div>
+            <div class="card-corner corner-br"></div>
+            <div class="timeline-meta-bar">
+              <span class="timeline-badge badge-haki">FOUNDATIONAL CADENCE</span>
+              <span class="timeline-dates">2026–Present</span>
+            </div>
+            <h3 class="timeline-entity-title">Academic Focus: Forward Deployed Engineering (FDE) + Entrepreneurship</h3>
+            <h4 class="timeline-project-subtitle">Venture Architecture &amp; Field Systems Engineering</h4>
+            <div class="timeline-tag-row">
+              <span class="haki-tag">FDE Mindset</span>
+              <span class="haki-tag">Venture Creation</span>
+              <span class="haki-tag">Zero-to-One Product</span>
+            </div>
+            <div class="timeline-narrative">
+              <p>Pioneering an interdisciplinary trajectory centered on Forward Deployed Engineering (FDE) with
+                high-velocity technology entrepreneurship. Focus: rapid customer feedback loops, diagnosing mission
+                bottlenecks on-site, and building production-ready prototypes.</p>
+              <div class="role-breakdown-box">
+                <span class="breakdown-headline">Core Pillars &amp; Competencies:</span>
+                <ul class="breakdown-list">
+                  <li>Customer discovery and problem validation in high-friction enterprise environments.</li>
+                  <li>Translating ambiguous user requirements into resilient, testable software solutions.</li>
+                  <li>Architecting products from prototype to product-market fit with speed and durability.</li>
+                  <li>Integrating AI capabilities with existing field workflows and legacy infrastructure.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- TIMELINE 3 -->
+          <article class="timeline-card cyber-card">
+            <div class="card-corner corner-tl"></div>
+            <div class="card-corner corner-tr"></div>
+            <div class="card-corner corner-bl"></div>
+            <div class="card-corner corner-br"></div>
+            <div class="timeline-meta-bar">
+              <span class="timeline-badge badge-all-blue">CORE MASTERY</span>
+              <span class="timeline-dates">2026–Present</span>
+            </div>
+            <h3 class="timeline-entity-title">Computer Science &amp; Systems Architecture</h3>
+            <h4 class="timeline-project-subtitle">Algorithms, Data Engineering &amp; Distributed Systems</h4>
+            <div class="timeline-tag-row">
+              <span class="haki-tag">Data Structures</span>
+              <span class="haki-tag">Distributed Networks</span>
+              <span class="haki-tag">AI/ML Fundamentals</span>
+            </div>
+            <div class="timeline-narrative">
+              <p>Rigorous grounding in computational theory, algorithm design, Python, semantic HTML/CSS, distributed
+                networks, AI/ML fundamentals — developing high-performance systems capable of real-time data handling,
+                agent coordination, and rock-solid reliability.</p>
+              <div class="role-breakdown-box">
+                <span class="breakdown-headline">Key Technical Focus:</span>
+                <ul class="breakdown-list">
+                  <li>Object-oriented and functional paradigm design in Python.</li>
+                  <li>Semantic HTML5, performant CSS architecture, and responsive interface protocols.</li>
+                  <li>Multi-agent autonomous coordination frameworks and heuristic search algorithms.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SEA CHANNEL 04: WANO → WATER 7
+         ========================================================================= -->
+    <div class="sea-channel-barrier" aria-hidden="true">
+      <div class="sea-barrier-beacon">
+        <span class="beacon-compass">&#9875;</span>
+        <span class="beacon-label">GRAND LINE SEA CHANNEL // ROUTE: WANO &#10142; WATER 7 AQUA LAGUNA TIDES</span>
+        <span class="beacon-depth">DEPTH: 5,800 FATHOMS // PUFFING TOM SEA-TRAIN TRACK CORRIDOR</span>
+      </div>
+      <div class="sea-wave-layers">
+        <svg class="sea-wave-svg wave-layer-1" viewBox="0 0 1440 220" preserveAspectRatio="none">
+          <path d="M0,110 C160,70 320,160 480,110 C640,60 800,155 960,110 C1120,65 1300,105 1440,90 L1440,220 L0,220 Z"
+            fill="#011638" />
+        </svg>
+        <svg class="sea-wave-svg wave-layer-2" viewBox="0 0 1440 220" preserveAspectRatio="none">
+          <path
+            d="M0,135 C200,100 400,168 600,132 C800,96 1000,165 1200,132 C1340,108 1400,128 1440,118 L1440,220 L0,220 Z"
+            fill="#00509d" />
+        </svg>
+        <svg class="sea-wave-svg wave-layer-3" viewBox="0 0 1440 220" preserveAspectRatio="none">
+          <path
+            d="M0,158 C150,132 300,183 450,155 C600,127 750,182 900,155 C1050,128 1230,163 1440,148 L1440,220 L0,220 Z"
+            fill="#00a8e8" />
+        </svg>
+        <svg class="sea-wave-svg wave-layer-4" viewBox="0 0 1440 220" preserveAspectRatio="none">
+          <path
+            d="M0,172 C140,158 280,188 420,170 C560,152 700,184 840,167 C980,150 1120,178 1260,164 C1360,153 1420,170 1440,165"
+            fill="none" stroke="#00f0ff" stroke-width="3.5" stroke-linecap="round" />
+          <path
+            d="M0,180 C120,167 240,193 360,178 C480,163 600,190 720,175 C840,160 980,183 1110,170 C1230,158 1360,178 1440,172"
+            fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.7" />
+        </svg>
+      </div>
+      <div class="sea-whirlpool-current"></div>
+    </div>
+
+    <!-- =========================================================================
+         ISLAND 04: WATER 7 — HACKATHON SHIPYARD
+         ========================================================================= -->
+    <section id="hackathons" class="section-padding island-sector island-water7">
+      <div class="terrain-backdrop terrain-water7-mesh" aria-hidden="true">
+        <div class="aqueduct-arches"></div>
+        <div class="water-canal-streams"></div>
+        <div class="sea-train-tracks"></div>
+      </div>
+
+      <div class="section-container">
+        <header class="section-header">
+          <div class="sector-badge">
+            <span class="sector-code">ISLAND 04 // WATER 7 SHIPWRIGHTS</span>
+            <span class="sector-coords">AQUA LAGUNA TIDES // GALLEY-LA DOCKS</span>
+            <!-- Easter Egg 04: Chopper's Panacea — decorative chip, no href -->
+            <span class="easter-egg-chip chip-nih" title="Chopper's Medical AI // NIH Human Genome Project">
+              <span class="chip-rune">&#9879;</span>
+              <span class="chip-name">Chopper's Panacea</span>
+              <span class="chip-lore">NIH Genome // Life Code</span>
+            </span>
+          </div>
+          <span class="section-kicker">04 // ENGINEERING EXPEDITIONS</span>
+          <h2 class="section-heading">Hackathon Shipyard</h2>
+        </header>
+
+        <div class="hackathons-grid">
+
+          <!-- HACKATHON 1: Hacktoberfest → Laabhsetu -->
+          <article class="hackathon-card cyber-card">
+            <div class="card-corner corner-tl"></div>
+            <div class="card-corner corner-tr"></div>
+            <div class="card-corner corner-bl"></div>
+            <div class="card-corner corner-br"></div>
+            <div class="card-kicker-row">
+              <span class="event-tag badge-solar">Hacktoberfest</span>
+              <span class="event-domain">AgriTech | Web Development</span>
+            </div>
+            <h3 class="hackathon-name">Laabhsetu – Smart Mandi Price Comparison Platform</h3>
+            <p class="hackathon-abstract">
+              Farmer-focused platform comparing mandi prices, transportation costs, and expenses to estimate net returns
+              — helping farmers identify the most profitable market for selling their crops.
+            </p>
+            <details class="interactive-drawer">
+              <summary class="drawer-trigger">
+                <span>View My Role &amp; Contributions</span>
+                <span class="drawer-icon">+</span>
+              </summary>
+              <div class="drawer-content">
+                <h5 class="drawer-role-heading">My Role: Concept Development &amp; Team Collaboration</h5>
+                <ul class="drawer-list">
+                  <li>Contributed to developing the project concept and solution approach.</li>
+                  <li>Worked on understanding farmer requirements and translating them to features.</li>
+                  <li>Collaborated with the team on application development and project planning.</li>
+                </ul>
+              </div>
+            </details>
+          </article>
+
+          <!-- HACKATHON 2: SIH → ResQLink -->
+          <article class="hackathon-card cyber-card">
+            <div class="card-corner corner-tl"></div>
+            <div class="card-corner corner-tr"></div>
+            <div class="card-corner corner-bl"></div>
+            <div class="card-corner corner-br"></div>
+            <div class="card-kicker-row">
+              <span class="event-tag badge-haki">Smart India Hackathon</span>
+              <span class="event-domain">Robotics &amp; AI</span>
+            </div>
+            <h3 class="hackathon-name">ResQLink – Intelligent Drone-Assisted Search &amp; Rescue</h3>
+            <p class="hackathon-abstract">
+              Multi-agent SAR system: 1 mother drone, 3–4 child drones, ground rovers for disaster response. Full
+              search-area coverage with adaptive mission planning and drone-rover coordination.
+            </p>
+            <details class="interactive-drawer">
+              <summary class="drawer-trigger">
+                <span>View My Role &amp; Contributions</span>
+                <span class="drawer-icon">+</span>
+              </summary>
+              <div class="drawer-content">
+                <h5 class="drawer-role-heading">My Role: Software – Search Coverage &amp; Gap Intelligence</h5>
+                <ul class="drawer-list">
+                  <li>Explored search-area coverage monitoring and tracking.</li>
+                  <li>Conceptualised identifying unexplored or insufficiently searched regions.</li>
+                  <li>Explored intelligent search prioritisation and adaptive mission planning.</li>
+                  <li>Studied coordination between aerial drones and ground rovers.</li>
+                </ul>
+                <div class="drawer-footnote">
+                  <strong>Key Areas:</strong> Robotics, Multi-Agent Systems, AI, Search Intelligence, Mission Planning.
+                </div>
+              </div>
+            </details>
+          </article>
+
+          <!-- HACKATHON 3: Scaler × Wispr Flow → CareRelay -->
+          <article class="hackathon-card cyber-card">
+            <div class="card-corner corner-tl"></div>
+            <div class="card-corner corner-tr"></div>
+            <div class="card-corner corner-bl"></div>
+            <div class="card-corner corner-br"></div>
+            <div class="card-kicker-row">
+              <span class="event-tag badge-all-blue">Scaler × Wispr Flow Hackathon</span>
+              <span class="event-domain">HealthTech | AI</span>
+            </div>
+            <h3 class="hackathon-name">CareRelay – Voice-First Healthcare Workflow Assistant</h3>
+            <p class="hackathon-abstract">
+              Voice workspace converting spoken consultations into structured clinical records, prescriptions, referrals
+              — with doctor approval before every action. Zero-friction clinical documentation.
+            </p>
+            <details class="interactive-drawer">
+              <summary class="drawer-trigger">
+                <span>View My Role &amp; Contributions</span>
+                <span class="drawer-icon">+</span>
+              </summary>
+              <div class="drawer-content">
+                <h5 class="drawer-role-heading">My Role: Solution Workflow &amp; Feature Design</h5>
+                <ul class="drawer-list">
+                  <li>Shaped the solution and its workflow from requirements to architecture.</li>
+                  <li>Translated real-world clinical requirements into actionable features.</li>
+                  <li>Collaborated on the proposed voice-driven healthcare system design.</li>
+                </ul>
+              </div>
+            </details>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SEA CHANNEL 05: WATER 7 → LAUGH TALE
+         ========================================================================= -->
+    <div class="sea-channel-barrier" aria-hidden="true">
+      <div class="sea-barrier-beacon">
+        <span class="beacon-compass">&#9875;</span>
+        <span class="beacon-label">CALM BELT &amp; VOID SEAS // ROUTE: WATER 7 &#10142; LAUGH TALE RIO PONEGLYPH
+          CITADEL</span>
+        <span class="beacon-depth">DEPTH: 10,000 FATHOMS // ANCIENT KINGDOM REMAINS</span>
+      </div>
+      <div class="sea-wave-layers">
+        <svg class="sea-wave-svg wave-layer-1" viewBox="0 0 1440 220" preserveAspectRatio="none">
+          <path d="M0,95 C240,55 480,165 720,95 C960,25 1200,145 1440,85 L1440,220 L0,220 Z" fill="#011638" />
+        </svg>
+        <svg class="sea-wave-svg wave-layer-2" viewBox="0 0 1440 220" preserveAspectRatio="none">
+          <path
+            d="M0,120 C200,85 400,160 600,120 C800,80 1000,158 1200,120 C1340,93 1400,118 1440,108 L1440,220 L0,220 Z"
+            fill="#00509d" />
+        </svg>
+        <svg class="sea-wave-svg wave-layer-3" viewBox="0 0 1440 220" preserveAspectRatio="none">
+          <path
+            d="M0,148 C160,122 320,178 480,148 C640,118 800,175 960,148 C1120,121 1300,155 1440,142 L1440,220 L0,220 Z"
+            fill="#00a8e8" />
+        </svg>
+        <svg class="sea-wave-svg wave-layer-4" viewBox="0 0 1440 220" preserveAspectRatio="none">
+          <path d="M0,165 C160,150 320,183 480,165 C640,147 800,181 960,163 C1120,145 1300,168 1440,160" fill="none"
+            stroke="#00f0ff" stroke-width="4" stroke-linecap="round" />
+          <path
+            d="M0,174 C140,160 280,188 420,173 C560,158 700,185 840,170 C980,155 1140,176 1300,165 C1380,159 1420,172 1440,168"
+            fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.7" />
+        </svg>
+      </div>
+      <div class="sea-whirlpool-current"></div>
+    </div>
+
+    <!-- =========================================================================
+         ISLAND 05: LAUGH TALE — SKILLS & PONEGLYPH VAULT
+         ========================================================================= -->
+    <section id="skills" class="section-padding island-sector island-laughtale">
+      <div class="terrain-backdrop terrain-laughtale-mesh" aria-hidden="true">
+        <div class="poneglyph-megaliths"></div>
+        <div class="rune-matrix-glow"></div>
+        <div class="emerald-mist"></div>
+      </div>
+
+      <div class="section-container">
+        <header class="section-header">
+          <div class="sector-badge">
+            <span class="sector-code">ISLAND 05 // LAUGH TALE &amp; PONEGLYPHS</span>
+            <span class="sector-coords">RIO PONEGLYPH COORD // 800-YEAR VAULT</span>
+            <!-- Easter Egg 05: Vegapunk's AI — decorative chip, no href -->
+            <span class="easter-egg-chip chip-distill" title="Vegapunk Machine Learning Lab // Distill.pub">
+              <span class="chip-rune">&#9889;</span>
+              <span class="chip-name">Vegapunk's AI</span>
+              <span class="chip-lore">Distill.pub // Visual Neural Intelligence</span>
+            </span>
+          </div>
+          <span class="section-kicker">05 // TECHNICAL ARSENAL</span>
+          <h2 class="section-heading">Proficiencies &amp; Mastery</h2>
+        </header>
+
+        <!-- Skill Meters -->
+        <div class="skills-dashboard">
+          <div class="meter-card cyber-card">
+            <div class="meter-info">
+              <span class="meter-label">Python Systems</span>
+              <span class="meter-val">60%</span>
+            </div>
+            <div class="meter-track">
+              <div class="meter-fill fill-python"></div>
+            </div>
+            <p class="meter-caption">Scripting, data pipelines, backend prototyping, and multi-agent AI simulations.</p>
+          </div>
+
+          <div class="meter-card cyber-card">
+            <div class="meter-info">
+              <span class="meter-label">Semantic HTML &amp; Web Standards</span>
+              <span class="meter-val">30%</span>
+            </div>
+            <div class="meter-track">
+              <div class="meter-fill fill-html"></div>
+            </div>
+            <p class="meter-caption">Clean DOM trees, accessible landmarks, zero-bloat semantic markup.</p>
+          </div>
+
+          <div class="meter-card cyber-card">
+            <div class="meter-info">
+              <span class="meter-label">Modern CSS &amp; 3D Transforms</span>
+              <span class="meter-val">25%</span>
+            </div>
+            <div class="meter-track">
+              <div class="meter-fill fill-css"></div>
+            </div>
+            <p class="meter-caption">Pure CSS animations, responsive grids, glassmorphism, and hardware-accelerated
+              layouts.</p>
+          </div>
+
+          <div class="meter-card cyber-card">
+            <div class="meter-info">
+              <span class="meter-label">AI Agents &amp; Intelligent Workflows</span>
+              <span class="meter-val">30%</span>
+            </div>
+            <div class="meter-track">
+              <div class="meter-fill fill-agents"></div>
+            </div>
+            <p class="meter-caption">Multi-agent orchestrations, drone coverage heuristics, and voice-assisted workflow
+              design.</p>
+          </div>
+        </div>
+
+        <!-- Grand Line Capability Matrix -->
+        <div class="skills-matrix-wrapper cyber-card">
+          <h3 class="matrix-title">Grand Line Capability Matrix</h3>
+          <div class="matrix-grid">
+            <div class="matrix-cell"><span class="cell-index">01</span><span class="cell-name">Drone Swarm
+                Planning</span></div>
+            <div class="matrix-cell"><span class="cell-index">02</span><span class="cell-name">Forward Deployed
+                Engineering</span></div>
+            <div class="matrix-cell"><span class="cell-index">03</span><span class="cell-name">Rapid Prototyping</span>
+            </div>
+            <div class="matrix-cell"><span class="cell-index">04</span><span class="cell-name">AgriTech Analytics</span>
+            </div>
+            <div class="matrix-cell"><span class="cell-index">05</span><span class="cell-name">Voice AI Workflows</span>
+            </div>
+            <div class="matrix-cell"><span class="cell-index">06</span><span class="cell-name">Python Scripting</span>
+            </div>
+            <div class="matrix-cell"><span class="cell-index">07</span><span class="cell-name">Semantic Web Tech</span>
+            </div>
+            <div class="matrix-cell"><span class="cell-index">08</span><span class="cell-name">Zero-to-One Venture
+                Ops</span></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SEA CHANNEL 06: LAUGH TALE → EGGHEAD
+         ========================================================================= -->
+    <div class="sea-channel-barrier" aria-hidden="true">
+      <div class="sea-barrier-beacon">
+        <span class="beacon-compass">&#9875;</span>
+        <span class="beacon-label">FUTURE OCEAN CORRIDOR // ROUTE: LAUGH TALE &#10142; EGGHEAD CYBER LAB SECTOR</span>
+        <span class="beacon-depth">DEPTH: 4,200 FATHOMS // VEGAPUNK QUANTUM DATA CURRENTS</span>
+      </div>
+      <div class="sea-wave-layers">
+        <svg class="sea-wave-svg wave-layer-1" viewBox="0 0 1440 220" preserveAspectRatio="none">
+          <path d="M0,105 C180,65 360,165 540,105 C720,45 900,160 1080,105 C1260,50 1380,100 1440,88 L1440,220 L0,220 Z"
+            fill="#011638" />
+        </svg>
+        <svg class="sea-wave-svg wave-layer-2" viewBox="0 0 1440 220" preserveAspectRatio="none">
+          <path
+            d="M0,128 C200,93 400,165 600,128 C800,91 1000,163 1200,128 C1340,102 1400,125 1440,115 L1440,220 L0,220 Z"
+            fill="#00509d" />
+        </svg>
+        <svg class="sea-wave-svg wave-layer-3" viewBox="0 0 1440 220" preserveAspectRatio="none">
+          <path
+            d="M0,152 C160,126 320,180 480,152 C640,124 800,178 960,152 C1120,126 1300,158 1440,145 L1440,220 L0,220 Z"
+            fill="#00a8e8" />
+        </svg>
+        <svg class="sea-wave-svg wave-layer-4" viewBox="0 0 1440 220" preserveAspectRatio="none">
+          <path d="M0,168 C150,153 300,185 450,167 C600,149 750,183 900,165 C1050,147 1230,170 1440,158" fill="none"
+            stroke="#00f0ff" stroke-width="3.5" stroke-linecap="round" />
+          <path
+            d="M0,176 C130,163 260,190 390,175 C520,160 650,187 780,172 C910,157 1070,179 1200,166 C1320,155 1395,174 1440,170"
+            fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.7" />
+        </svg>
+      </div>
+      <div class="sea-whirlpool-current"></div>
+    </div>
+
+    <!-- =========================================================================
+         ISLAND 06: EGGHEAD — DEN DEN MUSHI CONTACT
+         ========================================================================= -->
+    <section id="contact" class="section-padding island-sector island-egghead">
+      <div class="terrain-backdrop terrain-egghead-mesh" aria-hidden="true">
+        <div class="hologram-grid-floor"></div>
+        <div class="vegapunk-dome-rings"></div>
+        <div class="quantum-circuit-traces"></div>
+      </div>
+
+      <div class="section-container">
+        <header class="section-header">
+          <div class="sector-badge">
+            <span class="sector-code">ISLAND 06 // EGGHEAD FUTURE SCIENCE</span>
+            <span class="sector-coords">CYBER VEGAPUNK PROTOCOL // 500 YEARS AHEAD</span>
+            <!-- Easter Egg 06: Sanji's All-Blue / NOAA Ocean — decorative chip, no href -->
+            <span class="easter-egg-chip chip-noaa" title="Sanji's All-Blue // NOAA Ocean Exploration">
+              <span class="chip-rune">&#127754;</span>
+              <span class="chip-name">Sanji's All-Blue</span>
+              <span class="chip-lore">NOAA Ocean // Deep Trenches</span>
+            </span>
+          </div>
+          <span class="section-kicker">06 // DEN DEN MUSHI FREQUENCY</span>
+          <h2 class="section-heading">Establish Connection</h2>
+        </header>
+
+        <!-- LinkedIn Showcase Card -->
+        <div class="linkedin-showcase-card cyber-card">
+          <div class="card-corner corner-tl"></div>
+          <div class="card-corner corner-tr"></div>
+          <div class="card-corner corner-bl"></div>
+          <div class="card-corner corner-br"></div>
+          <div class="linkedin-card-content">
+            <div class="linkedin-icon-bubble">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.88a1.64 1.64 0 1 0-.02 3.28 1.64 1.64 0 0 0 .02-3.28z" />
+              </svg>
+            </div>
+            <div class="linkedin-card-text">
+              <span class="linkedin-card-kicker">PRIMARY CARRIER TRANSMISSION</span>
+              <h3 class="linkedin-card-title">Professional Network &amp; Collaboration</h3>
+              <p class="linkedin-card-desc">
+                Connect on LinkedIn for venture discussions, forward deployed engineering opportunities, drone robotics
+                collaborations, or tech initiatives. Conqueror's Haki — always open.
+              </p>
+            </div>
+            <a href="https://www.linkedin.com/in/b-aarush-raj-ab4765331" target="_blank" rel="noopener noreferrer"
+              class="btn btn-primary btn-large-glow" title="Connect on LinkedIn with B.V.M Aarush Raj">
+              <span>Connect on LinkedIn</span>
+              <span class="btn-arrow">&#8599;</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-subgrid">
+
+          <!-- Direct coordinates -->
+          <div class="contact-channels cyber-card">
+            <div class="card-corner corner-tl"></div>
+            <div class="card-corner corner-tr"></div>
+            <div class="card-corner corner-bl"></div>
+            <div class="card-corner corner-br"></div>
+            <h3 class="channels-title">Direct Communication Lines</h3>
+            <p class="channels-sub">Signals routed through encrypted Grand Line carrier frequencies.</p>
+            <ul class="channel-list">
+              <li class="channel-item">
+                <span class="channel-icon-circle">&#9993;</span>
+                <div class="channel-detail">
+                  <span class="channel-name">Electronic Mail</span>
+                  <a href="mailto:aarushraj15618@gmail.com" class="channel-link">aarushraj15618@gmail.com</a>
+                </div>
+              </li>
+              <li class="channel-item">
+                <span class="channel-icon-circle">&#9742;</span>
+                <div class="channel-detail">
+                  <span class="channel-name">Voice Transceiver</span>
+                  <a href="tel:9573691401" class="channel-link">9573691401</a>
+                </div>
+              </li>
+              <li class="channel-item">
+                <span class="channel-icon-circle">&#9875;</span>
+                <div class="channel-detail">
+                  <span class="channel-name">Code Armory (GitHub)</span>
+                  <a href="https://github.com/AarushRaj-Veyr" target="_blank" rel="noopener noreferrer"
+                    class="channel-link">github.com/AarushRaj-Veyr</a>
+                </div>
+              </li>
+              <li class="channel-item">
+                <span class="channel-icon-circle">&#9881;</span>
+                <div class="channel-detail">
+                  <span class="channel-name">LinkedIn Coordinates</span>
+                  <a href="https://www.linkedin.com/in/b-aarush-raj-ab4765331" target="_blank" rel="noopener noreferrer"
+                    class="channel-link">linkedin.com/in/b-aarush-raj-ab4765331</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Query form -->
+          <div id="query-console" class="query-form-card cyber-card">
+            <div class="card-corner corner-tl"></div>
+            <div class="card-corner corner-tr"></div>
+            <div class="card-corner corner-bl"></div>
+            <div class="card-corner corner-br"></div>
+            <div class="form-header">
+              <span class="badge-mini badge-haki">DEN DEN MUSHI UPLINK</span>
+              <h3 class="form-title">Transmit a Query</h3>
+              <p class="form-desc">For venture inquiries, technical advisory, project queries, or research
+                brainstorming.</p>
+            </div>
+            <form class="query-form" action="mailto:aarushraj15618@gmail.com" method="POST" enctype="text/plain">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="sender-name" class="form-label">Voyager Name / Affiliation</label>
+                  <input type="text" id="sender-name" name="name" class="form-input" placeholder="Your name" required>
+                </div>
+                <div class="form-group">
+                  <label for="sender-email" class="form-label">Return Frequency (Email)</label>
+                  <input type="email" id="sender-email" name="email" class="form-input" placeholder="your@email.com"
+                    required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="query-topic" class="form-label">Subject / Mission Objective</label>
+                <input type="text" id="query-topic" name="subject" class="form-input" placeholder="What's the mission?"
+                  required>
+              </div>
+              <div class="form-group">
+                <label for="query-body" class="form-label">Message Payload</label>
+                <textarea id="query-body" name="message" class="form-textarea" rows="4"
+                  placeholder="Describe your query or proposal..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-submit-glow">
+                <span>Transmit Signal to B.V.M Aarush Raj</span>
+                <span class="btn-arrow">&#10148;</span>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       THOUSAND SUNNY GRAND LINE FOOTER
+       ========================================================================= -->
+  <footer class="voyage-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span class="brand-monogram">B</span>
+        <div class="brand-info">
+          <span class="footer-name">B.V.M Aarush Raj</span>
+          <span class="footer-sub">GRAND LINE VOYAGE // FORWARD DEPLOYED ENGINEERING</span>
+        </div>
+      </div>
+      <div class="footer-center-quote">
+        <p class="footer-motto">"Turning curiosity into code and ideas into impact."</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/b-aarush-raj-ab4765331" target="_blank" rel="noopener noreferrer"
+          class="footer-link footer-link-linkedin">
+          <svg class="footer-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path
+              d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.88a1.64 1.64 0 1 0-.02 3.28 1.64 1.64 0 0 0 .02-3.28z" />
+          </svg>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/AarushRaj-Veyr" target="_blank" rel="noopener noreferrer"
+          class="footer-link">GitHub</a>
+        <a href="mailto:aarushraj15618@gmail.com" class="footer-link">Direct Email</a>
+      </div>
+    </div>
+    <div class="footer-bottom-bar">
+      <span>Grand Line Cyber Navigation // All rights reserved &copy; B.V.M Aarush Raj.</span>
+      <span class="footer-status">LOG POSE STABLE // VOYAGING TO LAUGH TALE</span>
+    </div>
+  </footer>
+
+</body>
+
+</html>
